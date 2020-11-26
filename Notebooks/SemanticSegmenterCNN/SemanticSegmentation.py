@@ -27,7 +27,7 @@ def GetStats(GroundPosMask,PredPosMask):
     AreaRatio = (TP+FN+1e-12)/(TP+FP+1e-12)
     return JI,Dice,AreaRatio,Recall,Precision,TP,TN,FP,FN
 
-def metric_jaccard_coef_categorical_int(y_true, y_pred)
+def metric_jaccard_coef_categorical_int(y_true, y_pred):
     smooth = 1e-12
     TargetClass = 1
     class_id_true = K.argmax(y_true, axis=-1)
@@ -47,7 +47,7 @@ def metric_precision(y_true, y_pred):
     class_id_true = K.argmax(y_true, axis=-1)
     class_id_preds = K.argmax(y_pred, axis=-1)
     predicted_mask = K.cast(K.equal(class_id_preds, TargetClass), 'float32')
-    actual_mask = K.cast(K.equal(class_id_true, TargetClass), 'float32'
+    actual_mask = K.cast(K.equal(class_id_true, TargetClass), 'float32')
     #get the intersection 
     total_class_intersection = K.sum(predicted_mask*actual_mask, axis=[0,1,2]) #sums over patches and space, this clas
     #get the count of total predictions
