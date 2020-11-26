@@ -1,5 +1,7 @@
 # HiRISE-MachineLearning-Python
- Using deep neural networks to automatically find fans in HiRISE polar imagery
+ Using deep neural networks to automatically find fans in HiRISE polar imagery.
+ 
+ Code in association with manuscript: "A Neural Network's Search For Polar Spring-time Fans On Mars."
  
  It is recommended to run all cells in notebooks in this order:
  
