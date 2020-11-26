@@ -13,6 +13,7 @@ conda install -y -c anaconda jupyter
 pip install opencv-python
 pip install "Glymur==0.9.1"
 conda install -y -c anaconda openjpeg
+conda install -y -c anaconda scikit-learn
 conda install -y -c michaelaye planetfour-catalog
 pip install p4tools
 
