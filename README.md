@@ -15,5 +15,5 @@
 The notebook Notebooks/Clustering/HiRISE_ClusteringResults.ipynb is included for completeness, but cannot be run, as it relies on many large mask images created in proprietary software.  The results of running this script are however stored in Data/ClusteringResults/ which enables Notebooks/CreateFigures/Figures_6_through_12.ipynb to be run once the training and validation notebooks are run.
 
 Note that our training scripts use over 300 GB of RAM, and the segmentation one uses 4 GPUs in parallel. To run without these resources, changes are need, as indicated in the notebooks.
- 
- 
+
+This code is also available at [https://doi.org/10.5281/zenodo.4292195](https://doi.org/10.5281/zenodo.4292195)
